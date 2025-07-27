@@ -1,6 +1,5 @@
 // ["article", "word", "wordPlural", "translation", "example", "A1.1"],
 const telcA1_1 = [
-
   ["der", "Abend", "Abende", "tarde / noche", "Guten Abend!", "Lektion 1: Hallo! Wie geht's?", "level"],
   ["-", "alles", "-", "todo", "Alles ist gut.", "Lektion 1: Hallo! Wie geht's?", "level"],
   ["-", "antworten-antwortete-geantwortet", "-", "contestar, responder", "Sie antworten schnell.", "Lektion 1: Hallo! Wie geht's?", "level"],
@@ -148,8 +147,6 @@ const telcA1_1 = [
   ["der", "Wohnort", "Wohnorte", "residencia", "Mein Wohnort ist München.", "Lektion 2: Meine Familie und ich", "A1.1"],
   ["die", "Zahl", "Zahlen", "número", "Das ist eine große Zahl.", "Lektion 2: Meine Familie und ich", "A1.1"],
   ["-", "zu", "-", "demasiado", "Das ist jetzt leider zu spät.", "Lektion 2: Meine Familie und ich", "A1.1"]
-
-
 ]
 
 export const words = [...telcA1_1];
