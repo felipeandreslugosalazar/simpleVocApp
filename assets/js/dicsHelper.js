@@ -80,7 +80,6 @@ const telcA1_1 = [
   ["-", "wo", "-", "dónde", "Wo wohnst du?", "Lektion 1: Hallo! Wie geht's?", "level"],
   ["-", "woher", "-", "de dónde", "Woher kommst du?", "Lektion 1: Hallo! Wie geht's?", "level"],
   ["das", "Wort", "Wörter", "palabra", "Das ist ein deutsches Wort.", "Lektion 1: Hallo! Wie geht's?", "level"]
-
   // Lektion 2: Meine Familie und ich
   ["-", "aber", "-", "pero", "Ich bin müde, aber glücklich.", "Lektion 2: Meine Familie und ich", "A1.1"],
   ["die", "Adresse", "Adressen", "dirección", "Wie ist Ihre Adresse?", "Lektion 2: Meine Familie und ich", "A1.1"],
