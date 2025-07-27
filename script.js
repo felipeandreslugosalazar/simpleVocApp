@@ -1,4 +1,4 @@
-import { words } from "/assets/js/dicsHelper.js";
+import { words } from "./assets/js/dicsHelper.js";
 
 let startButton = document.getElementById('start-button');
 // let index = Math.floor(Math.random() * words.length);
