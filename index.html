@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Voc App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <link rel="icon" href="/icon.png" type="image/png" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icon.png" />
+
+  <link rel="stylesheet" href="/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="main-container d-flex flex-column text-center justify-content-evenly">
+    <section id="content-welcome">
+      <h1 id="title-welcome" class="">Welcome to
+        <br> VocAppbulary !
+      </h1>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center text-center">
+      <div id=content-word>
+        <div class="mb-5">
+          <!-- <div><h6 id="words"></h6></div> -->
+          <!-- ["article", "word", "Plural", "translation", "example"],  // ==> telcA1_1 -->
+          <div>
+            <h6><span id="index">index</span>.</h6> <!-- INDEX -->
+            <div class="d-flex flex-row justify-content-center align-items-baseline">
+              <h3 id="article" class="text-center me-2">(article)</h3> <!-- WORD ARTICLE -->
+              <h1 id="word">Word</h1> <!-- WORD -->
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-baseline">
+              <h3 id="articlePlural" class="text-center me-2">(die)</h3> <!-- INDEX -->
+              <h1 id="plural">plural</h1>
+            </div>
+          </div>
+          <h4 id="example">example</h4>
+          <!-- <h6 id="type">type.</h6> -->
+        </div>
+        <h4 id="translation" class="text-capitalize text-secondary">translation</h4>
+
+        <div class="d-flex flex-row justify-content-center align-items-baseline text-center">
+          <h6 id="categorie" class="text-capitalize text-secondary me-1">categorie</h6>
+          <h6 id="level" class="text-capitalize text-secondary">level</h6>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div id="content-button">
+        <button type="button" id="start-button" class="btn btn-dark">Start</button>
+      </div>
+
+      <div id="navContainer">
+        <button type="button" id="previous-button" class="btn btn-dark me-5">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z"
+              fill="white" />
+          </svg>
+        </button>
+
+        <button type="button" id="random-button" class="btn btn-dark me-5">
+          <svg fill="white" width="24px" height="24px" viewBox="0 0 256 256" id="Flat"
+            xmlns="http://www.w3.org/2000/svg" stroke="white">
+            <path
+              d="M237.65723,178.34277a8.00122,8.00122,0,0,1,0,11.31446l-24,24A8.00066,8.00066,0,0,1,200,208V191.98584a72.13911,72.13911,0,0,1-57.65332-30.13721L100.63379,103.4502A56.11029,56.11029,0,0,0,55.06445,80H32a8,8,0,0,1,0-16H55.06445a72.14126,72.14126,0,0,1,58.58887,30.15137l41.71289,58.39843A56.0996,56.0996,0,0,0,200,175.97168V160a8.00065,8.00065,0,0,1,13.65723-5.65723Zm-94.64356-71.36132a7.99621,7.99621,0,0,0,11.15918-1.86036l1.19336-1.67089A56.0996,56.0996,0,0,1,200,80.02832V96a8.00053,8.00053,0,0,0,13.65723,5.65723l24-24a8.00122,8.00122,0,0,0,0-11.31446l-24-24A8.00065,8.00065,0,0,0,200,48V64.01416a72.13911,72.13911,0,0,0-57.65332,30.13721l-1.19336,1.6709A7.9986,7.9986,0,0,0,143.01367,106.98145Zm-30.02734,42.0371a7.99642,7.99642,0,0,0-11.15918,1.86036l-1.19336,1.67089A56.11029,56.11029,0,0,1,55.06445,176H32a8,8,0,0,0,0,16H55.06445a72.14126,72.14126,0,0,0,58.58887-30.15137l1.19336-1.6709A7.9986,7.9986,0,0,0,112.98633,149.01855Z">
+            </path>
+          </svg>
+        </button>
+
+        <button type="button" id="next-button" class="btn btn-dark">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
+              fill="white"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

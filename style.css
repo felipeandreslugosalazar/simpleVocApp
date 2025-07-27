@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+
+.main-container {
+  min-height: 100dvh;
+}
+
+#content-word,
+#navContainer {
+  visibility: hidden;
+}
