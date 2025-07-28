@@ -58,13 +58,15 @@ To run the app locally:
 # Clone the repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
 
-# Serve the app (using any local server, e.g., http-server, live-server)
-Vsc GoLive
-npx http-server .
+# Serve the app 
 
-**🧾 License
-This project is open source and available under the MIT License.**
+- using any local server, e.g., http-server, live-server, Vsc GoLive, npx http-server, python -m http.server.
+
+# 🧾License
+
+This project is open source and available under the MIT License.
 
 Feel free to fork, contribute, or raise issues!
 
