@@ -1,14 +1,14 @@
 const CACHE_NAME = "vocapp-cache-v1";
 const FILES_TO_CACHE = [
-  "./",
-  "./index.html",
-  "./style.css",
-  "./script.js",
-  "./assets/js/dicsHelper.js",
-  "./manifest.json",
-  "./icon-192.png",
-  "./icon-512.png",
-  "./favicon.png"
+  "/simpleVocApp/",
+  "/simpleVocApp/index.html",
+  "/simpleVocApp/style.css",
+  "/simpleVocApp/script.js",
+  "/simpleVocApp/assets/js/dicsHelper.js",
+  "/simpleVocApp/manifest.json",
+  "/simpleVocApp/icon-192.png",
+  "/simpleVocApp/icon-512.png",
+  "/simpleVocApp/favicon.png"
 ];
 
 

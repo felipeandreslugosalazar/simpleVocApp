@@ -1,4 +1,4 @@
-import { words } from "./assets/js/dicsHelper.js";
+import { words } from "/simpleVocApp/assets/js/dicsHelper.js";
 
 let startButton = document.getElementById('start-button');
 // let index = Math.floor(Math.random() * words.length);
@@ -124,7 +124,7 @@ function enableNavigation() {
 
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./service-worker.js")
+    navigator.serviceWorker.register("/simpleVocApp/service-worker.js")
       .then(reg => {
         console.log("✅ SW registered at scope:", reg.scope);
 
