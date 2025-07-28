@@ -122,14 +122,27 @@ function enableNavigation() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-
+window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-      .register("./service-worker.js")
-      .then(() => console.log("✅ Service Worker registrado"))
-      .catch(err => console.error("❌ Error al registrar SW:", err));
-  }
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(reg => {
+        console.log("✅ SW registered at scope:", reg.scope);
 
-  start();
+        // Comprobar si ya hay un SW activo o esperar a que se active
+        if (navigator.serviceWorker.controller) {
+          // Ya hay un SW controlando la página
+          start();
+        } else {
+          // Esperar a que el SW tome control (evento controllerchange)
+          navigator.serviceWorker.addEventListener("controllerchange", () => {
+            console.log("Service Worker is now controlling the page");
+            start();
+          });
+        }
+      })
+      .catch(err => console.error("❌ Error registering Service Worker:", err));
+  } else {
+    // No hay soporte para SW, igual arrancamos la app
+    start();
+  }
 });
